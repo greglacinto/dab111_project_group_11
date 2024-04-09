@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DAB 111 - Python</title>
+
+        <style>
+            table {
+                width: 90%;
+                margin: auto;
+                border-collapse: collapse;
+                font-size: 12px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>About</h1>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Link To Home page</a></li>
+        </ul>
+        <br />
+
+        <h2>Data Source</h2>
+        <p>The Data used for this project was gotten from Data World. A full view of the utilized data can be found <a href="https://data.world/dradar/customerchurnpredictiononsupermarketdata" target="_blank">here</a></p>
+        
+        <br />
+
+        <h2>Feature Definition</h2>
+        <table>
+            <thead>
+                <tr><th>column name</th><th>data type</th><th>description</th></tr>
+            </thead>
+            <tbody>
+                {% for s in columns%}
+                <tr>
+                    <td>{{ s[0] }}</td>
+                    <td>{{ s[1] }}</td>
+                    <td>{{ s[2] }}</td>
+                </tr>
+                {% endfor %}    
+            </tbody>
+        </table>
+        </table>
+    </body>
+</html>
