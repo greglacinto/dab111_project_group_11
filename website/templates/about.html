@@ -35,18 +35,91 @@
         <h2>Feature Definition</h2>
         <table>
             <thead>
-                <tr><th>column name</th><th>data type</th><th>description</th></tr>
+                <tr><th>Variable Name</th><th>Data Type</th><th>Description</th></tr>
             </thead>
             <tbody>
-                {% for s in columns%}
                 <tr>
-                    <td>{{ s[0] }}</td>
-                    <td>{{ s[1] }}</td>
-                    <td>{{ s[2] }}</td>
+                    <td>row_number</td>
+                    <td>numerical</td>
+                    <td>1, 2, 3...</td>
                 </tr>
-                {% endfor %}    
+                <tr>
+                    <td>invoice_id</td>
+                    <td>categorical</td>
+                    <td>example 655-07-2265</td>
+                </tr>
+                <tr>
+                    <td>branch</td>
+                    <td>categorical</td>
+                    <td>A, B, C</td>
+                </tr>
+                <tr>
+                    <td>customer_id</td>
+                    <td>numerical</td>
+                    <td>identifier</td>
+                </tr>
+                <tr>
+                    <td>gender</td>
+                    <td>categorical</td>
+                    <td>male, female</td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td>numerical</td>
+                    <td>1, 2, 3...</td>
+                </tr>
+                <tr>
+                    <td>customer_type</td>
+                    <td>categorical</td>
+                    <td>normal, member</td>
+                </tr>
+                <tr>
+                    <td>credit_score</td>
+                    <td>continuous</td>
+                    <td>from 350 to 850</td>
+                </tr>
+                <tr>
+                    <td>product_category</td>
+                    <td>categorical</td>
+                    <td>Fashion accessories, Food and beverages, Electronic accessories, Sports and travel, Home and Lifestyle, Health and beauty</td>
+                </tr>
+                <tr>
+                    <td>number_of_products</td>
+                    <td>numerical</td>
+                    <td>1, 2, 3...</td>
+                </tr>
+                <tr>
+                    <td>tax_amount</td>
+                    <td>continuous</td>
+                    <td>from 0.5085 to 49.65</td>
+                </tr>
+                <tr>
+                    <td>price</td>
+                    <td>continuous</td>
+                    <td>from 10.08 to 99.96</td>
+                </tr>
+                <tr>
+                    <td>total_amount</td>
+                    <td>continuous</td>
+                    <td>from 10.67 to 1042.65</td>
+                </tr>
+                <tr>
+                    <td>ratings</td>
+                    <td>continuous</td>
+                    <td>from 4.0 to 10.0</td>
+                </tr>
+                <tr>
+                    <td>customer_churn</td>
+                    <td>categorical</td>
+                    <td>False, True</td>
+                </tr>
             </tbody>
         </table>
-        </table>
+
+        <br />
+
+        <footer>
+            <p>&copy; 2024 Group 11, Section 3. All rights reserved.</p>
+        </footer>
     </body>
 </html>

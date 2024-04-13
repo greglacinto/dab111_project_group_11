@@ -17,21 +17,13 @@ def index():
 
 @app.route("/about")
 def about():
-    columns = [
-        [
-            'row_number', 'numerical', 'sequential order of data'
-        ],
-        [
-            'invoice_id', 'categorical', 'identity number on invoice'
-        ],
-    ]
-    return render_template("about.html", columns=columns)
+    return render_template("about.html")
 
 @app.route("/data")
 def data():
     con = sqlite3.connect(db_path)
     cursor = con.cursor()
-    students = cursor.execute("SELECT * FROM customer_data limit 10").fetchall()
+    students = cursor.execute("SELECT * FROM customer_data limit 20").fetchall()
     con.close()
 
     columns = ['row_number', 'invoice_id', 'branch', 'customer_id', 'gender', 'age',
